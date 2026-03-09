@@ -14,6 +14,9 @@
 },
 "videoSolutions": false,
 "projectType": "tutorial",
+"entries": {
+    "node": "app.js"
+},
 "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
 "graded": true,
 "editor": {

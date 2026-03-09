@@ -1,0 +1,12 @@
+{
+  "name": "master-typescript-programming-exercises",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript tooling and LearnPack plugin for master programming exercises.",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

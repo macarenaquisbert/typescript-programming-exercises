@@ -30,7 +30,13 @@ Clone the repository in your local environment and follow the steps below:
 $ npm i @learnpack/learnpack -g
 ```
 
-2. Start the tutorial/exercises by running the following command at the same level where your learn.json file is:
+2. Install the local TypeScript plugin for LearnPack:
+
+```bash
+$ learnpack plugins:install file:$(pwd)/learnpack-typescript-plugin
+```
+
+3. Start the tutorial/exercises by running the following command at the same level where your learn.json file is:
 
 ```bash
 $ learnpack start
@@ -41,7 +47,7 @@ $ learnpack start
 
 Each exercise is a small React application containing the following files:
 
-1. **app.js**: Represents the entry JavaScript file that will be executed by the computer.
+1. **app.ts**: Represents the entry TypeScript file that will be executed by the computer (compiled to `app.js` by LearnPack before running tests).
 2. **README.md**: Contains exercise instructions.
 3. **test.js**: Contains the testing script for the exercise (you don't have to open this file).
 

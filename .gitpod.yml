@@ -1,6 +1,9 @@
 image:
   file: .gitpod.Dockerfile
 
+tasks:
+    - init: learnpack plugins:install file:$(pwd)/learnpack-typescript-plugin
+
 ports:
     - port: 3000
       onOpen: ignore

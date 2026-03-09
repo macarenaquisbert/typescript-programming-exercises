@@ -7,10 +7,25 @@
 !bc.json
 !README.md
 !README.es.md
+!CHANGELOG.md
+!learn.json
+!package.json
+!package-lock.json
+!tsconfig.json
 !.vscode
+!.vscode/**
+!.github
+!.github/**
+!.devcontainer
+!.devcontainer/**
+!/learnpack-typescript-plugin
+!/learnpack-typescript-plugin/**
 
 !/exercises
 !/exercises/*
+/exercises/**/app.js
+/node_modules
+/learnpack-typescript-plugin/node_modules
 
 !/.breathecode
 /.breathecode/**

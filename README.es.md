@@ -22,13 +22,19 @@ Puedes empezar estos ejercicios en pocos segundos haciendo clic en: [Abrir en Co
 
 Clona el repositorio en tu ambiente local y sigue los siguientes pasos:
 
-1. Instala LearnPack, el package manager para los tutoriales interactivos y el node compiler plugin para LearnPack, asegúrate también de tener node.js 14:
+1. Instala LearnPack, el package manager para los tutoriales interactivos y el plugin de compilación para LearnPack, asegúrate también de tener node.js 14:
 
 ```bash
 $ npm i @learnpack/learnpack -g
 ```
 
-2. Inicializa el tutorial/exercises ejecutando el siguiente comando al mismo nivel en el que se encuentra tu archivo learn.json: 
+2. Instala el plugin local de TypeScript para LearnPack:
+
+```bash
+$ learnpack plugins:install file:$(pwd)/learnpack-typescript-plugin
+```
+
+3. Inicializa el tutorial/exercises ejecutando el siguiente comando al mismo nivel en el que se encuentra tu archivo learn.json: 
 
 ```bash
 $ learnpack start
@@ -40,7 +46,7 @@ $ learnpack start
 
 Cada ejercicio es una pequeña aplicación de React que contiene los siguientes archivos:
 
-- **app.js**: Representa el archivo JavaScript de entrada que ejecutará la computadora.
+- **app.ts**: Representa el archivo TypeScript de entrada que ejecutará la computadora (LearnPack lo compila a `app.js` antes de correr los tests).
 - **README.md**: Contiene las instrucciones del ejercicio.
 - **test.js**: Contiene el script del test para el ejercicio (no es necesario que abras este archivo).
 

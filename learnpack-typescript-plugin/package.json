@@ -1,0 +1,23 @@
+{
+  "name": "@learnpack/typescript",
+  "description": "TypeScript compiler plugin for LearnPack tutorials",
+  "version": "0.1.0",
+  "private": true,
+  "author": "4Geeks Academy",
+  "license": "UNLICENSED",
+  "main": "src/plugin.js",
+  "files": [
+    "oclif.manifest.json",
+    "src"
+  ],
+  "dependencies": {
+    "@learnpack/node": "1.1.15",
+    "learnpack": "0.1.27",
+    "typescript": "^5.9.2"
+  },
+  "oclif": {
+    "hooks": {
+      "action": "./src/plugin.js"
+    }
+  }
+}
