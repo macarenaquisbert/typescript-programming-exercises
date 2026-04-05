@@ -1,6 +1,10 @@
 function checkAge(name: string, age: number): string {
   // your code here
-    return '';
+  if (age >= 21) {
+    return "Welcome, " + name + "!";
+  } else {
+    return "Go home, " + name + "!";
+  }
 }
 
 export {};
